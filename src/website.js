@@ -1,12 +1,12 @@
 
 function createHeader() {
-    const header = createElement("header");
+    const header = document.createElement("header");
     header.classList.add("header");
 
-    const logo = createElement("div");
+    const logo = document.createElement("div");
     logo.classList.add("logo");
-    const logoLink = createElement("a");
-    logoLink.textContent("LOGO");
+    const logoLink = document.createElement("a");
+    logoLink.textContent = "LOGO";
     logo.appendChild(logoLink);
 
     header.appendChild(logo);
@@ -16,9 +16,9 @@ function createHeader() {
 }
 
 function createNav() {
-    const nav = createElement("nav");
-    const list = createElement("ul");
-    const listItem = createElement("li");
+    const nav = document.createElement("nav");
+    const list = document.createElement("ul");
+    const listItem = document.createElement("li");
     nav.appendChild(list);
     listItem.appendChild(document.createTextNode("Five"));
     list.appendChild(listItem);
@@ -27,7 +27,7 @@ function createNav() {
 }
 function loadWebsite() {
     const content = document.getElementById("content");
-
+    content.textContent ="";
     content.appendChild(createHeader());
 }
 
