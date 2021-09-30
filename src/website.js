@@ -1,16 +1,20 @@
+import loadHomePage from "./home";
 
 function createHeader() {
     const header = document.createElement("header");
     header.classList.add("header");
 
+    const container = document.createElement("div");
+    container.classList.add("container");
+    header.appendChild(container);
     const logo = document.createElement("div");
     logo.classList.add("logo");
     const logoLink = document.createElement("a");
     logoLink.textContent = "LOGO";
     logo.appendChild(logoLink);
 
-    header.appendChild(logo);
-    header.appendChild(createNav());
+    container.appendChild(logo);
+    container.appendChild(createNav());
     
     return header;
 }
@@ -100,6 +104,9 @@ function loadWebsite() {
     content.appendChild(createHeader());
     content.appendChild(createMain());
     content.appendChild(createFooter());
+
+    setActive(document.querySelector(".nav-button"));
+    loadHomePage();
 }
 
 export default loadWebsite;
