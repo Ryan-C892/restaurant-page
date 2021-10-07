@@ -95,6 +95,83 @@ a {
 }
 
 /* Main */
+main {
+    margin: 210px auto;
+    width: 700px;
+    height: 500px;
+    background-color: #fff;
+}
+.row {
+    
+    margin: 0 auto;
+    padding: 20px
+}
+
+.column {
+    width: 50%;
+    float: left;
+    padding: 20px;
+    height: 500px;
+}
+
+/* Home Page */
+.column:nth-child(1) {
+    position: relative;
+    width: 300px;
+    height: 500px;
+    top: -20px;
+    left: -30px;
+}
+
+.column:nth-child(2) {
+    width: 300px;
+}
+
+.chef-image {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: 100%;    
+}
+
+/* Header */
+.header-section {
+    width: 300px;
+    transform: scale(1.2, 1.2) translate3d(-30px, 0, 0);
+    transform-origin: left center;
+    text-shadow: 2.5px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.sub-header {
+    font-size: 25px;
+}
+
+.restaurant-name {
+    font-size: 30px;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: scale3d(1, 1.2, 1) translate3d(0, -15px, 0);
+    transform-origin: bottom center;
+}
+
+.about-para {
+    position: relative;
+    bottom: 5px;
+    width: 300px;
+    font-size: 16px;
+}
+
+/* Time */
+.time span:nth-child(1) {
+    font-size: 18px;
+}
+
+.time span:nth-child(2), a {
+    color: rgb(240, 103, 11);
+    font-size: 26px;
+}
 
 /* Footer */
 #footer {
