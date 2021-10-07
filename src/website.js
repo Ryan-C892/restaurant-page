@@ -7,9 +7,12 @@ function createHeader() {
     const container = document.createElement("div");
     container.classList.add("container");
     header.appendChild(container);
+
     const logo = document.createElement("div");
     logo.classList.add("logo");
+
     const logoLink = document.createElement("a");
+    logoLink.href="#"
     logoLink.textContent = "LOGO";
     logo.appendChild(logoLink);
 
@@ -22,6 +25,7 @@ function createHeader() {
 function createNav() {
     const nav = document.createElement("nav");
     nav.setAttribute("id", "navbar");
+
     const list = document.createElement("ul");
     list.classList.add("navbar-list");
     nav.appendChild(list);
@@ -45,6 +49,7 @@ function createNav() {
     homeBtn.addEventListener("click", (e) => {
         if (e.target.classList.contains("active")) return;
         setActive(homeBtn);
+        loadHomePage();
     });
     
 
