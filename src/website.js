@@ -1,4 +1,5 @@
 import loadHomePage from "./home";
+import loadMenuPage from "./menu";
 
 function createHeader() {
     const header = document.createElement("header");
@@ -11,11 +12,13 @@ function createHeader() {
     const logo = document.createElement("div");
     logo.classList.add("logo");
 
-    const logoLink = document.createElement("a");
+    const logoLink = document.createElement("button");
     logoLink.href="#"
     logoLink.textContent = "LOGO";
     logo.appendChild(logoLink);
-
+    logo.addEventListener("click", ()=> {
+        loadHomePage();
+    });
     container.appendChild(logo);
     container.appendChild(createNav());
     
@@ -60,6 +63,7 @@ function createNav() {
     menuBtn.addEventListener("click", (e) => {
         if (e.target.classList.contains("active")) return;
         setActive(menuBtn);
+        loadMenuPage();
     });
 
     let contactBtn = document.createElement("button");
