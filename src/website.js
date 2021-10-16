@@ -5,10 +5,6 @@ function createHeader() {
     const header = document.createElement("header");
     header.classList.add("header");
 
-    const container = document.createElement("div");
-    container.classList.add("container");
-    header.appendChild(container);
-
     const logo = document.createElement("div");
     logo.classList.add("logo");
 
@@ -19,8 +15,8 @@ function createHeader() {
     logo.addEventListener("click", ()=> {
         loadHomePage();
     });
-    container.appendChild(logo);
-    container.appendChild(createNav());
+    header.appendChild(logo);
+    header.appendChild(createNav());
     
     return header;
 }
