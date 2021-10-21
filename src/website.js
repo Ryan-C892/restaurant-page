@@ -42,6 +42,7 @@ function createNav() {
     list.appendChild(listItemThree);
 
     let homeBtn = document.createElement("button");
+    homeBtn.setAttribute("id", "home-btn");
     homeBtn.classList.add("nav-button");
     homeBtn.textContent = "Home";
     listItemOne.appendChild(homeBtn);
@@ -53,6 +54,7 @@ function createNav() {
     
 
     let menuBtn = document.createElement("button");
+    menuBtn.setAttribute("id", "menu-btn");
     menuBtn.classList.add("nav-button");
     menuBtn.textContent = "Menu";
     listItemTwo.appendChild(menuBtn);
@@ -63,6 +65,7 @@ function createNav() {
     });
 
     let contactBtn = document.createElement("button");
+    contactBtn.setAttribute("id", "contact-btn");
     contactBtn.classList.add("nav-button");
     contactBtn.textContent = "Contact";
     listItemThree.appendChild(contactBtn);

@@ -1,3 +1,5 @@
+import loadMenuPage from "./menu";
+
 function createHomePage() {
     const container = document.createElement("div");
     container.classList.add("container");
@@ -23,6 +25,16 @@ function createHomePage() {
     columnTwo.appendChild(createPara());
     columnTwo.appendChild(createParaTwo());
     columnTwo.appendChild(createTime());
+
+    const orderOnline = document.createElement("div");
+    orderOnline.classList.add("column");
+    row.appendChild(orderOnline);
+
+    const onlineInner = document.createElement("div");
+    onlineInner.classList.add("online-inner");
+    orderOnline.appendChild(onlineInner);
+    onlineInner.appendChild(createParaThree());
+    onlineInner.appendChild(createButton());
 
     return container;
 }
@@ -60,6 +72,14 @@ function createParaTwo() {
     return paraTwo;
 }
 
+function createParaThree() {
+    const paraThree = document.createElement("p");
+    paraThree.classList.add("online-para");
+    paraThree.textContent = "Order for lunch, dinner, or late-night delivery anytime. We have atleast three locations available to serve you - hot, ready and expertly made."
+
+    return paraThree;
+}
+
 function createTime() {
     const time = document.createElement("div");
     time.classList.add("time");
@@ -85,6 +105,38 @@ function createTime() {
 
     return time;
 }
+
+function createButton() {
+    const orderBtn = document.createElement("button");
+    orderBtn.classList.add("order-btn");
+
+    const orderLink = document.createElement("a");
+    orderLink.classList.add("order-link");
+    orderLink.textContent = "Order Now";
+    orderLink.href = "#";
+    let menuBtn = document.getElementById("menu-btn");
+    orderLink.addEventListener("click", (e)=> {
+        if (e.target.classList.contains("active")) return;
+        setActive(menuBtn);
+        loadMenuPage();
+    });
+    orderBtn.appendChild(orderLink);
+
+    return orderBtn;
+}
+
+function setActive(button) {
+    const buttonList = document.querySelectorAll(".nav-button");
+
+    buttonList.forEach((button) => {
+        if (button !== this) {
+            button.classList.remove("active");
+        }
+    });
+
+    button.classList.add("active");
+}
+
 
 function loadHomePage() {
     const main = document.getElementById("main");

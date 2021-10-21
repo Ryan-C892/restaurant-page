@@ -20,14 +20,12 @@ function createMenuPage() {
     mainMenu.setAttribute("id", "menu");
     menuContainer.appendChild(mainMenu);
 
-    for(let i = 0; i < 12; i++) {
+    for(let i = 0; i < 20; i++) {
         const smallColumn = document.createElement("div");
         smallColumn.classList.add("small-column");
         mainMenu.appendChild(smallColumn);
     }
 }
-
-
 
 function loadMenuPage() {
     const main = document.getElementById("main");
