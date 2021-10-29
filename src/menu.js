@@ -24,6 +24,19 @@ function createMenuPage() {
         const smallColumn = document.createElement("div");
         smallColumn.classList.add("small-column");
         mainMenu.appendChild(smallColumn);
+
+        let selects = document.getElementsByClassName("small-column");
+        if(i==1) {
+            let smallColumnHeader = document.createElement("h2");
+            smallColumnHeader.classList.add("small-column-header");
+            smallColumnHeader.textContent = "Cheese Pizza";
+            
+            let smallColumnPara = document.createElement("p");
+            smallColumnPara.classList.add("small-column-para");
+
+            selects[i].appendChild(smallColumnHeader);
+            selects[i].appendChild(smallColumnPara);
+        }
     }
 }
 

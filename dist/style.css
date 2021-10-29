@@ -267,6 +267,13 @@ main {
     border: 1px solid #fff;
 }
 
+.small-column-header {
+    color: #fff;
+    display: block;
+    width: 160px;
+    margin: 10px auto;
+}
+
 /* Footer */
 #footer {
     position: absolute;
