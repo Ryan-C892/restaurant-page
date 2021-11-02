@@ -31,11 +31,22 @@ function createMenuPage() {
             smallColumnHeader.classList.add("small-column-header");
             smallColumnHeader.textContent = "Cheese Pizza";
             
-            let smallColumnPara = document.createElement("p");
-            smallColumnPara.classList.add("small-column-para");
+            let smallParaOne = document.createElement("p");
+            smallParaOne.classList.add("small-column-para");
+            smallParaOne.textContent = "Small - $12.95";
+
+            let smallParaTwo = document.createElement("p");
+            smallParaTwo.classList.add("small-column-para");
+            smallParaTwo.textContent = "Medium - $15.95";
+
+            let smallParaThree = document.createElement("p");
+            smallParaThree.classList.add("small-column-para");
+            smallParaThree.textContent = "Large - $17.95";
 
             selects[i].appendChild(smallColumnHeader);
-            selects[i].appendChild(smallColumnPara);
+            selects[i].appendChild(smallParaOne);
+            selects[i].appendChild(smallParaTwo);
+            selects[i].appendChild(smallParaThree);
         }
     }
 }
