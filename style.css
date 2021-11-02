@@ -281,6 +281,10 @@ main {
     margin: 10px auto;
 }
 
+.menu-img {
+    width: 100%;
+    height: 100%;
+}
 /* Footer */
 #footer {
     position: absolute;
