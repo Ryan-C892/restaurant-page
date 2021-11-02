@@ -274,6 +274,13 @@ main {
     margin: 10px auto;
 }
 
+.small-column-para {
+    color: #fff;
+    display: block;
+    width: 160px;
+    margin: 10px auto;
+}
+
 /* Footer */
 #footer {
     position: absolute;
