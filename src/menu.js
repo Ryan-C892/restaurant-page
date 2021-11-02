@@ -26,6 +26,14 @@ function createMenuPage() {
         mainMenu.appendChild(smallColumn);
 
         let selects = document.getElementsByClassName("small-column");
+        // ---Box 3--- //
+        if(i==0) {
+            let menuImg = document.createElement("img");
+            menuImg.classList.add("menu-img");
+            menuImg.src = "images/homemade-cheese-pizza-7.jpg";
+            selects[i].appendChild(menuImg);
+        }
+        // ---Box 2--- //
         if(i==1) {
             let smallColumnHeader = document.createElement("h2");
             smallColumnHeader.classList.add("small-column-header");
