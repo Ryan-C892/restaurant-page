@@ -10,7 +10,7 @@ function createHeader() {
 
     const logoLink = document.createElement("button");
     logoLink.href="#"
-    logoLink.textContent = "LOGO";
+    logoLink.textContent = "Antonio's Pizzeria";
     logo.appendChild(logoLink);
     logo.addEventListener("click", ()=> {
         loadHomePage();

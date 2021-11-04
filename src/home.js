@@ -50,7 +50,7 @@ function createAbout() {
 
     const headerTwo = document.createElement("h2");
     headerTwo.classList.add("restaurant-name");
-    headerTwo.textContent = "Antonio Restaurant";
+    headerTwo.textContent = "Antonio's Pizzeria";
     headerSection.appendChild(headerTwo);
 
     return headerSection;
