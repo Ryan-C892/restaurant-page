@@ -60,6 +60,9 @@ a {
 
 .logo button {
     color: #fff;
+    background-color: #800000;
+    border: 2px solid #ca0000;
+    border-radius: 20px;
     font-size: 20px;
     font-weight: 700;
     line-height: 50px;
@@ -168,9 +171,9 @@ main {
     display: block;
     margin: 50px auto;
     padding: 10px 20px 10px 20px;
-    background-color: #ca0000;
+    background-color: #800000;
     color: #fff;
-    border: 2px solid #800000;
+    border: 2px solid #ca0000;
     border-radius: 26px;
 }
 
@@ -268,17 +271,33 @@ main {
 }
 
 .small-column-header {
+    font-size: 23px;
     color: #fff;
     display: block;
-    width: 160px;
-    margin: 10px auto;
+    width: 100%;
+    max-width: 250px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.small-column-description {
+    font-size: 14px;
+    color: #fff;
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+    text-align: left;
 }
 
 .small-column-para {
+    font-size: 14px;
     color: #fff;
     display: block;
-    width: 160px;
+    width: 100%;
+    max-width: 200px;
     margin: 10px auto;
+    text-align: center;
 }
 
 .menu-img {
