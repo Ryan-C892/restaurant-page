@@ -304,6 +304,58 @@ main {
     width: 100%;
     height: 100%;
 }
+/* Contact */
+.contact-container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin: 150px auto;
+    width: 100%;
+    max-width: 1000px;
+}
+.contact-header {
+    text-align: center;
+}
+.contact-row {
+    margin: -50px auto;
+    padding: 50px 0 120px 0;
+}
+
+.contact-row:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.contact-column {
+    width: 50%;
+    float: left;
+    padding: 30px;
+    height: 500px;
+}
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin: 6px 0 16px 0;
+    resize: vertical;
+}
+input[type=email] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin: 6px 0 16px 0;
+    resize: vertical;
+}
+
+input[type=submit] {
+    color: #fff;
+    background-color: #04AA6D;
+    padding: 12px 20px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
 /* Footer */
 #footer {
     position: absolute;

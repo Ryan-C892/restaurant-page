@@ -1,5 +1,6 @@
 import loadHomePage from "./home";
 import loadMenuPage from "./menu";
+import loadContactPage from "./contact";
 
 function createHeader() {
     const header = document.createElement("header");
@@ -72,6 +73,7 @@ function createNav() {
     contactBtn.addEventListener("click", (e) => {
         if (e.target.classList.contains("active")) return;
         setActive(contactBtn);
+        loadContactPage();
     });
 
     return nav;
